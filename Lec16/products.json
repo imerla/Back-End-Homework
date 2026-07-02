@@ -1,0 +1,103 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Milk",
+      "price": 4,
+      "category": "Drink",
+      "isExpire": false
+    },
+    {
+      "id": 3,
+      "name": "TV",
+      "price": 1000,
+      "category": "Electronics",
+      "isExpire": false
+    },
+    {
+      "id": 6,
+      "name": "Water",
+      "price": 1,
+      "category": "Drink",
+      "isExpire": false
+    },
+    {
+      "id": 8,
+      "name": "Coffee",
+      "price": 15,
+      "category": "Drink",
+      "isExpire": false
+    },
+    {
+      "id": 9,
+      "name": "Tea",
+      "price": 10,
+      "category": "Drink",
+      "isExpire": false
+    },
+    {
+      "id": 10,
+      "name": "Rice",
+      "price": 7,
+      "category": "Food",
+      "isExpire": false
+    },
+    {
+      "id": 11,
+      "name": "Pasta",
+      "price": 3,
+      "category": "Food",
+      "isExpire": false
+    },
+    {
+      "id": 13,
+      "name": "Potatoes",
+      "price": 3,
+      "category": "Vegetable",
+      "isExpire": false
+    },
+    {
+      "id": 14,
+      "name": "Apples",
+      "price": 5,
+      "category": "Fruit",
+      "isExpire": true
+    },
+    {
+      "id": 15,
+      "name": "Bananas",
+      "price": 3,
+      "category": "Fruit",
+      "isExpire": true
+    },
+    {
+      "id": 16,
+      "name": "Chicken",
+      "price": 18,
+      "category": "Meat",
+      "isExpire": true
+    },
+    {
+      "id": 17,
+      "name": "Beef",
+      "price": 25,
+      "category": "Meat",
+      "isExpire": true
+    },
+    {
+      "id": 18,
+      "name": "Fish",
+      "price": 20,
+      "category": "Meat",
+      "isExpire": true
+    },
+    {
+      "id": 19,
+      "name": "Yogurt",
+      "price": 3,
+      "category": "Dairy",
+      "isExpire": true
+    }
+  ],
+  "nextId": 21
+}
