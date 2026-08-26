@@ -15,7 +15,7 @@ export class User {
   password!: string;
 
   @Prop({ type: [String], default: [] })
-  productIds!: string[]; // Array of product IDs owned by this user
+  productIds!: string[];
 
   @Prop({ default: Date.now })
   createdAt!: Date;

@@ -18,7 +18,7 @@ export class Product {
   stock!: number;
 
   @Prop({ required: true })
-  userId!: string; // Reference to User who owns this product
+  userId!: string;
 
   @Prop({ default: Date.now })
   createdAt!: Date;

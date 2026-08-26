@@ -3,5 +3,5 @@ export class CreateProductDto {
   description!: string;
   price!: number;
   stock!: number;
-  userId!: string; // Reference to the user who owns this product
+  userId!: string;
 }
