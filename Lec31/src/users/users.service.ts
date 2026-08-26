@@ -29,4 +29,20 @@ export class UsersService {
   async remove(id: string) {
     return this.userModel.findByIdAndDelete(id).exec();
   }
+
+  async addProductToUser(userId: string, productId: string) {
+    return this.userModel.findByIdAndUpdate(
+      userId,
+      { $push: { productIds: productId } },
+      { new: true }
+    ).exec();
+  }
+
+  async removeProductFromUser(userId: string, productId: string) {
+    return this.userModel.findByIdAndUpdate(
+      userId,
+      { $pull: { productIds: productId } },
+      { new: true }
+    ).exec();
+  }
 }

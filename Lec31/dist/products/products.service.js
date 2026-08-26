@@ -32,6 +32,9 @@ let ProductsService = class ProductsService {
     async findOne(id) {
         return this.productModel.findById(id).exec();
     }
+    async findByUserId(userId) {
+        return this.productModel.find({ userId }).exec();
+    }
     async update(id, updateProductDto) {
         return this.productModel.findByIdAndUpdate(id, updateProductDto, { new: true }).exec();
     }

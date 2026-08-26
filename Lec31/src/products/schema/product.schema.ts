@@ -17,6 +17,9 @@ export class Product {
   @Prop({ required: true })
   stock!: number;
 
+  @Prop({ required: true })
+  userId!: string;
+
   @Prop({ default: Date.now })
   createdAt!: Date;
 

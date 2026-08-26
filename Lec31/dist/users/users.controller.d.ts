@@ -39,4 +39,18 @@ export declare class UsersController {
     } & {
         id: string;
     }) | null>;
+    addProductToUser(userId: string, productId: string): Promise<(import("mongoose").Document<unknown, {}, import("./schema/user.schema").UserDocument, {}, import("mongoose").DefaultSchemaOptions> & import("./schema/user.schema").User & import("mongoose").Document<import("mongoose").Types.ObjectId, any, any, Record<string, any>, {}> & Required<{
+        _id: import("mongoose").Types.ObjectId;
+    }> & {
+        __v: number;
+    } & {
+        id: string;
+    }) | null>;
+    removeProductFromUser(userId: string, productId: string): Promise<(import("mongoose").Document<unknown, {}, import("./schema/user.schema").UserDocument, {}, import("mongoose").DefaultSchemaOptions> & import("./schema/user.schema").User & import("mongoose").Document<import("mongoose").Types.ObjectId, any, any, Record<string, any>, {}> & Required<{
+        _id: import("mongoose").Types.ObjectId;
+    }> & {
+        __v: number;
+    } & {
+        id: string;
+    }) | null>;
 }
