@@ -37,6 +37,12 @@ let UsersController = class UsersController {
     remove(id) {
         return this.usersService.remove(id);
     }
+    addProductToUser(userId, productId) {
+        return this.usersService.addProductToUser(userId, productId);
+    }
+    removeProductFromUser(userId, productId) {
+        return this.usersService.removeProductFromUser(userId, productId);
+    }
 };
 exports.UsersController = UsersController;
 __decorate([
@@ -74,6 +80,22 @@ __decorate([
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], UsersController.prototype, "remove", null);
+__decorate([
+    (0, common_1.Post)(':userId/products/:productId'),
+    __param(0, (0, common_1.Param)('userId')),
+    __param(1, (0, common_1.Param)('productId')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, String]),
+    __metadata("design:returntype", void 0)
+], UsersController.prototype, "addProductToUser", null);
+__decorate([
+    (0, common_1.Delete)(':userId/products/:productId'),
+    __param(0, (0, common_1.Param)('userId')),
+    __param(1, (0, common_1.Param)('productId')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, String]),
+    __metadata("design:returntype", void 0)
+], UsersController.prototype, "removeProductFromUser", null);
 exports.UsersController = UsersController = __decorate([
     (0, common_1.Controller)('users'),
     __metadata("design:paramtypes", [users_service_1.UsersService])

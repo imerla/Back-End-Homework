@@ -22,6 +22,10 @@ export class ProductsService {
     return this.productModel.findById(id).exec();
   }
 
+  async findByUserId(userId: string) {
+    return this.productModel.find({ userId }).exec();
+  }
+
   async update(id: string, updateProductDto: UpdateProductDto) {
     return this.productModel.findByIdAndUpdate(id, updateProductDto, { new: true }).exec();
   }

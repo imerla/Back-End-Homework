@@ -31,4 +31,14 @@ export class UsersController {
   remove(@Param('id') id: string) {
     return this.usersService.remove(id);
   }
+
+  @Post(':userId/products/:productId')
+  addProductToUser(@Param('userId') userId: string, @Param('productId') productId: string) {
+    return this.usersService.addProductToUser(userId, productId);
+  }
+
+  @Delete(':userId/products/:productId')
+  removeProductFromUser(@Param('userId') userId: string, @Param('productId') productId: string) {
+    return this.usersService.removeProductFromUser(userId, productId);
+  }
 }

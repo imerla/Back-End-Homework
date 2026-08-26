@@ -18,6 +18,13 @@ export declare class ProductsController {
     } & {
         id: string;
     })[]>;
+    findByUserId(userId: string): Promise<(import("mongoose").Document<unknown, {}, import("./schema/product.schema").ProductDocument, {}, import("mongoose").DefaultSchemaOptions> & import("./schema/product.schema").Product & import("mongoose").Document<import("mongoose").Types.ObjectId, any, any, Record<string, any>, {}> & Required<{
+        _id: import("mongoose").Types.ObjectId;
+    }> & {
+        __v: number;
+    } & {
+        id: string;
+    })[]>;
     findOne(id: string): Promise<(import("mongoose").Document<unknown, {}, import("./schema/product.schema").ProductDocument, {}, import("mongoose").DefaultSchemaOptions> & import("./schema/product.schema").Product & import("mongoose").Document<import("mongoose").Types.ObjectId, any, any, Record<string, any>, {}> & Required<{
         _id: import("mongoose").Types.ObjectId;
     }> & {

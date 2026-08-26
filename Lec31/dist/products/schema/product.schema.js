@@ -16,6 +16,7 @@ let Product = class Product {
     description;
     price;
     stock;
+    userId;
     createdAt;
     updatedAt;
 };
@@ -36,6 +37,10 @@ __decorate([
     (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", Number)
 ], Product.prototype, "stock", void 0);
+__decorate([
+    (0, mongoose_1.Prop)({ required: true }),
+    __metadata("design:type", String)
+], Product.prototype, "userId", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ default: Date.now }),
     __metadata("design:type", Date)

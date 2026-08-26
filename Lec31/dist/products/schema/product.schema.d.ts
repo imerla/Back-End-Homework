@@ -5,6 +5,7 @@ export declare class Product {
     description: string;
     price: number;
     stock: number;
+    userId: string;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -45,6 +46,15 @@ export declare const ProductSchema: import("mongoose").Schema<Product, import("m
         id: string;
     }>> | undefined;
     stock?: import("mongoose").SchemaDefinitionProperty<number, Product, Document<unknown, {}, Product, {
+        id: string;
+    }, import("mongoose").DefaultSchemaOptions> & Omit<Product & {
+        _id: import("mongoose").Types.ObjectId;
+    } & {
+        __v: number;
+    }, "id"> & import("mongoose").HydratedDocumentOverrides<{
+        id: string;
+    }>> | undefined;
+    userId?: import("mongoose").SchemaDefinitionProperty<string, Product, Document<unknown, {}, Product, {
         id: string;
     }, import("mongoose").DefaultSchemaOptions> & Omit<Product & {
         _id: import("mongoose").Types.ObjectId;

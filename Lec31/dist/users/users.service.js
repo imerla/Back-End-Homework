@@ -38,6 +38,12 @@ let UsersService = class UsersService {
     async remove(id) {
         return this.userModel.findByIdAndDelete(id).exec();
     }
+    async addProductToUser(userId, productId) {
+        return this.userModel.findByIdAndUpdate(userId, { $push: { productIds: productId } }, { new: true }).exec();
+    }
+    async removeProductFromUser(userId, productId) {
+        return this.userModel.findByIdAndUpdate(userId, { $pull: { productIds: productId } }, { new: true }).exec();
+    }
 };
 exports.UsersService = UsersService;
 exports.UsersService = UsersService = __decorate([
