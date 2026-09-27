@@ -8,8 +8,10 @@ async function bootstrap() {
 
   app.enableCors({
     origin: [
+      'http://localhost:3000',
       'http://localhost:3001',
       'https://front-end-vercel-liart.vercel.app',
+      /^https:\/\/.*\.vercel\.app$/,
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
