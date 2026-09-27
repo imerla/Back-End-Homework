@@ -2,7 +2,12 @@
 
 NestJS + MongoDB authentication API (JWT, no Passport).
 
-## Setup
+## Live URLs
+
+- Backend: https://back-end-render-bbn4.onrender.com
+- Frontend: https://front-end-vercel-liart.vercel.app
+
+## Local setup
 
 ```bash
 npm install
