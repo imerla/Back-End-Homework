@@ -5,7 +5,7 @@ NestJS + MongoDB authentication API (JWT, no Passport).
 ## Live URLs
 
 - Backend: https://back-end-render-bbn4.onrender.com
-- Frontend: https://front-end-vercel-liart.vercel.app
+- Frontend: https://front-end-vercel-git-master-imera.vercel.app
 
 ## Local setup
 
