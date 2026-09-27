@@ -6,7 +6,9 @@ NestJS + MongoDB authentication API (JWT, no Passport).
 
 ```bash
 npm install
-cp .env.example .env   # fill in MONGO_URI and JWT_SECRET
+# create a .env file with:
+# MONGO_URI=mongodb://127.0.0.1:27017/authdb
+# JWT_SECRET=your_secret_key
 npm run start:dev      # http://localhost:3000
 ```
 
