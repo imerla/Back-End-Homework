@@ -4,7 +4,7 @@ Next.js (App Router, TypeScript, Tailwind) frontend for a full-stack authenticat
 
 ## Live URLs
 
-- Frontend: https://front-end-vercel-liart.vercel.app
+- Frontend: https://front-end-vercel-git-master-imera.vercel.app
 - Backend: https://back-end-render-bbn4.onrender.com
 
 ## Setup
